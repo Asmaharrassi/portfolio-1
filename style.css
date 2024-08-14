@@ -73,6 +73,7 @@ button {
 }
 .title-content #buttons button:last-child{
  color: var(--text-color1);
+ 
 border:1px solid #F2F2F2
 }
 .title-content #buttons{
