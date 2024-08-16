@@ -9,10 +9,14 @@ html{
     font-size: 10px;
 }
 :root{
---background-color: #202020;
+--background-color: black;
 --text-color1: #FFFFFF;  
 --text-color2:#828282;
+--links-color:#535353;
 --button-color:#27AE60;
+--cirle-color:#212121;
+--skills-color:#4F4F4F;
+
 }
 body{
 width: 135rem;
@@ -85,11 +89,116 @@ border:1px solid #F2F2F2
 .img-content img {
     max-width: 100%;
     max-height: 100%;
-  border-radius: 100rem;
+    border-radius: 100rem;
     border: 3rem solid #1E1D1D ;
 }
-#text-content{
-margin: 20rem;
-justify-content: center;
-flex-direction: centre;
+.text-content{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   margin: 3rem 47rem 3rem 47rem;
+   text-align: center;
+   font-size: 1rem;
+   gap: 3rem;
 }
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 30rem 3rem 30rem;
+}
+.circle{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.circle-1{
+border: 2rem solid #212121;
+height: 4rem;
+width: 4rem;
+border-radius: 50%;
+z-index: 2;
+}
+.circle-2{
+   border: 0.5rem solid var(--button-color); 
+   height: 0.4rem;
+   width: 0.4rem;
+   border-radius: 50% ;
+   z-index: 1;
+}
+.text-content h2, #title-2 h2, #title-3 h2, #title-4 h2 {
+display: flex;
+justify-content: center;
+font-size: 3rem;
+}
+.experience{
+display: flex;
+justify-content: space-between;
+margin: 7rem 25rem 7rem 25rem ;
+}
+.experience-1,.experience-2,.experience-3 {
+   background-color: #212121;
+   width: 18rem;
+   height: 12rem;
+   z-index: 1;
+   color:var(--links-color) ;
+   padding: 2rem 3rem 2rem 3rem;
+}
+.experience-1 img, .experience-2 img,.experience-3 img{
+    width:3rem ;
+    height:3rem ;
+}
+.experience-1 h2,.experience-2 h2,.experience-3 h2 {
+padding-top: 1rem;
+font-size: 2rem;
+}
+.skills {
+background-color: #212121;
+border: 1px solid #333333;
+display: flex;
+padding: 4rem;
+display: flex;
+justify-content: space-evenly;
+margin:5rem 25rem 5rem 25rem ;
+}
+.skills h1{
+color: var(--skills-color);
+font-size: 4rem;
+}
+.skills p{
+color: var(--button-color);
+text-align: center;
+font-size: 1.5rem;
+}
+ .contact{
+min-height: 10rem;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--background-color);
+}
+
+.contact form{
+margin: 3rem;
+border-bottom: 2px solid #4f4f4f;
+
+}
+form .input-box{
+display: flex;
+justify-content: space-between;
+}
+.input input{
+background: none;
+}
+.contact form input{
+    padding: 2rem;
+        border-bottom: 2px solid #4f4f4f;
+        margin-bottom: 2rem;
+}
+.textarea #message{
+    border: 0.1rem solid #4f4f4f;
+}
+
+
